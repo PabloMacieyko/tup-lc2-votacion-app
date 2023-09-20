@@ -36,7 +36,8 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .menu p {
@@ -44,82 +45,94 @@
     margin-right: 10px;
 }
 
-.menu-boton-paso {
-    background-color: var(--magenta);
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 10px;
+a {
+    text-decoration: none;
     color: #FFF;
-    text-transform: uppercase;
-    text-align: center;
 }
 
-.menu-boton-paso:hover {
-    background-color: var(--gris-claro);
-}
-
-
+.menu-boton-paso,
 .menu-boton-generales {
-    background-color: var(--celeste);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 20px;
     font-size: 10px;
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-.menu-boton-generales:hover {
-    background-color: var(--gris-claro);
-}
-
 
 .menu-boton-informes {
     border-radius: 15px;
     border: 1px solid white;
-    padding: 5px;
+    padding: 5px 20px;
     font-size: 10px;
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.menu-boton-informes:hover {
+.menu-boton-paso {
+    background-color: var(--magenta);
+}
+
+.menu-boton-generales {
+    background-color: var(--celeste);
+}
+
+.menu-boton-informes:hover,
+.menu-boton-generales:hover,
+.menu-boton-paso:hover {
     background-color: var(--gris-claro);
 }
 
-#sec-titulo {
-    display: flex;
+.container-principal {
+    display: grid;
+    justify-items: start;
+}
+
+.parrafo {
+    padding: 20px;
+    font-size: 150%;
+}
+
+#sec-titulo,
+#sec-contenido {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.boton-container {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    align-items: center;
+    justify-content: center;
 
 }
 
-#sec-titulo img {
-    max-width: 350px;
-    height: auto;
+#boton-paso,
+#boton-generales {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 80px;
+    width: 400px;
+    padding: 1rem;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #boton-paso {
     background-color: var(--magenta);
-    border-radius: 10px;
-    margin: 25px;
-    height: 100px;
-    width: 400px;
-    padding: 1rem;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-
 }
 
 #boton-generales {
     background-color: var(--celeste);
-    border-radius: 10px;
-    margin: 25px;
-    height: 100px;
-    width: 400px;
-    padding: 1rem;
-    font-size: 28px;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
 }

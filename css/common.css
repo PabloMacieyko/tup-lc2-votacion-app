@@ -74,6 +74,8 @@ h3 {
     padding-top: 20px;
     background-color: var(--fondo-Menu);
     width: 100%;
+    text-decoration: none;
+    color: #FFF;
 }
 
 footer {
