@@ -1,0 +1,83 @@
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-button {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 10px;
+    color: var(--textos);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+}
+
+.menu-boton-inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    float: right ;
+    margin-left: auto ;
+}
+
+.menu-boton-inicio:hover {
+    color: var(--textos);
+}
+
+#agregarAInformes{
+    background-color: var(--gris-claro);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#agregarAInformes:hover{
+    color:var(--textos)
+}
+
+p {
+    font-size: 14px;
+    color: var(--celeste);
+    font-family: 'Roboto';
+}
+
+.contenedor-recuadros {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.recuadro-mesas {
+
+}

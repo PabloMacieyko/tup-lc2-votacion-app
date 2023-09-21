@@ -36,6 +36,7 @@
 }
 
 p {
+    margin: 10px;
     font-size: 12px;
     color: var(--textos);
 }
@@ -60,42 +61,132 @@ h3 {
     padding: 0.5em;
     background-color: var(--fondo-Cabecera);
     color: white;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 .logo {
     width: 150px;
+    padding-left: 60px;
 }
 
 .menu {
-    margin-left: 13px;
     margin-right: 13px;
-    padding-top: 20px;
     background-color: var(--fondo-Menu);
     width: 100%;
+    display: flex;
     text-decoration: none;
     color: #FFF;
-}
-
-footer {
-    background-color: var(--fondo-Footer);
-    color: var(--texto-footer);
-    text-align: center;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 5px;
 }
 
 footer img {
+    margin-top: 20px;
+    padding-left: 400px;
     width: 40px;
-    margin: 5px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    background-color: var(--fondo-Footer);
+    color: var(--texto-footer);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: calc(50% - 10px);
+    padding: 10px;
+    height: 500;
+    marg
 }
 
 footer p {
-    margin: 10px 0;
+    margin: auto;
     font-size: 14px;
-    color: var(--texto-footer)
+    color: var(--texto-footer);
+    line-height: 30px;
 }
 
 footer a {
     color: var(--texto-footer);
     text-decoration: underline;
+}
+
+
+.menu-boton-paso,
+.menu-boton-generales {
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-boton-informes {
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px 20px;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-boton-paso {
+    background-color: var(--magenta);
+}
+
+.menu-boton-generales {
+    background-color: var(--celeste);
+}
+
+.menu-boton-informes:hover,
+.menu-boton-generales:hover,
+.menu-boton-paso:hover {
+    background-color: var(--gris-claro);
+}
+
+#mensaje-a-usuario-positivo {
+    background-color: green;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;  
+}
+
+#mensaje-a-usuario-error {
+    background-color: red;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#mensaje-a-usuario-incompleta {
+    background-color: yellow;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
 }
