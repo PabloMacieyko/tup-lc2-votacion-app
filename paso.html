@@ -18,7 +18,9 @@
     <header>
         <!--Barra de logo portal-->
         <div class="header-page">
-            <a href="index.html"><img src="img/Logo_DINE_negativo.png" alt="logo" class="logo"></a>
+            <a href="index.html">
+                <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo">
+            </a>
         </div>
         <!--Barra de menú principal-->
         <nav class="menu">
@@ -258,28 +260,60 @@
 
             <div class="recuadros-centrales">
                 <div class="agrupacion-politica">
-                    <h2>Agrupaciones política</h2>
+                    <div class="title">Agrupaciones política</div>
                     <table>
                         <tr>
-                            <th>Agrupación Política</th>
-                            <th>Porcentaje de Votos</th>
-                            <th>Total de Votos</th>
+                            <div class="Titulo-agrupacion">JUNTOS POR EL CAMBIO</div>
+                            <div class="agrupacion-textos">
+                            <th>Juntos</th>
+                            <th>38%</th>
+                            <th>30000 Votos</th></div>
+                            <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                                <div class="progress-bar" style="width:75%; background: var(--grafica-amarillo);">
+                                    <span class="progress-bar-text">75%</span>
+                            </div>
+                            <th>PJ</th>
+                            <th>20%</th>
+                            <th>12000 Votos</th></div>
+                            <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                                <div class="progress-bar" style="width:15%; background: var(--grafica-amarillo);">
+                                    <span class="progress-bar-text">15%</span>
+                            </div>
+                            
+                            <div class="Titulo-agrupacion">ECO + VAMOS CORRIENTES</div>
+                            <div class="agrupacion-textos">
+                            <th>VERDE</th>
+                            <th>38%</th>
+                            <th>30000 Votos</th></div>
+                            <div class="progress" style="background: var(--grafica-verde-claro);">
+                                <div class="progress-bar" style="width:75%; background: var(--grafica-verde);">
+                                    <span class="progress-bar-text">75%</span>
+                            </div>
+                            <th>PJ</th>
+                            <th>20%</th>
+                            <th>12000 Votos</th></div>
+                            <div class="progress" style="background: var(--grafica-verde-claro);">
+                                <div class="progress-bar" style="width:15%; background: var(--grafica-verde);">
+                                    <span class="progress-bar-text">15%</span>
+                            </div>
+                            
                         </tr>
                     </table>
-                    <div class="barra-porcentaje" style="--bar-value:85%;"></div>
+                    
                 </div>
 
                 <div class="cuadro-mapa">
                     <!--Mapas-->
+
                     <div class="title">Ciudad Autónoma de Buenos Aires</div>
-                    <svg height="210" width="800">
+                    <svg height="210" width="300">
                         <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
                             fill-rule="evenodd"
                             d="M182 61L179 56L176 58L178 56L176 53L173 55L169 47L168 48L164 45L157 43L158 41L155 41L154 36L149 32L148 33L143 29L142 30L145 32L140 29L138 32L137 30L140 29L139 26L137 28L136 23L133 22L130 27L103 41L81 99L82 134L131 179L159 140L168 137L171 139L174 138L181 141L186 137L195 136L200 130L207 125L205 120L210 118L210 112L205 107L210 110L213 114L215 113L215 110L217 110L218 112L219 111L217 109L221 111L224 109L220 106L222 106L221 102L218 102L216 104L215 103L217 102L212 102L220 101L219 95L216 92L214 86L208 81L200 83L199 80L201 79L202 81L200 77L206 75L203 75L203 73L206 73L201 71L205 70L199 69L198 68L202 68L200 66L195 67L194 66L198 65L188 62L192 62L190 60L183 59L189 64L187 65z">
                         </path>
                     </svg>
-
+                    <!--oculto
                     <div class="title">Buenos Aires</div>
                     <svg height="210" width="800">
                         <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
@@ -289,6 +323,7 @@
                         </path>
                     </svg>
 
+                    
                     <div class="title">Catamarca</div>
                     <svg height="210" width="800">
                         <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
@@ -485,23 +520,30 @@
                             fill-rule="evenodd"
                             d="M166 125L160 121L154 114L139 104L136 98L129 92L122 78L120 79L114 76L114 73L118 67L120 67L121 69L121 67L113 54L113 140L114 138L118 138L120 136L132 139L141 138L161 146L163 143L172 143L173 140L177 140L180 142L185 139L185 141L188 140L188 138L190 137L189 135L192 130L181 130L170 128L167 126z">
                         </path>
-                    </svg>
+                    </svg>-->
 
 
                 </div>
 
                 <div class="cuadro-grafica">
+
                     <div class="chart-wrap horizontal">
                         <div class="title">Resumen de votos</div>
                         <div class="grid">
-                            <div class="bar" style="--bar-value:85%;" data-name="Partido 1" title="Partido 1 85%"></div>
-                            <div class="bar" style="--bar-value:23%;" data-name="Partido 2" title="Partido 2 23%"></div>
-                            <div class="bar" style="--bar-value:7%;" data-name="Partido 3" title="Partido 3 7%"></div>
-                            <div class="bar" style="--bar-value:38%;" data-name="Partido 4" title="Partido 4 38%"></div>
-                            <div class="bar" style="--bar-value:35%;" data-name="Partido 5" title="Partido 5 35%"></div>
-                            <div class="bar" style="--bar-value:30%;" data-name="Partido 6" title="Partido 6 30%"></div>
-                            <div class="bar" style="--bar-value:5%;" data-name="Partido 7" title="Partido 7 5%"></div>
-                            <div class="bar" style="--bar-value:20%;" data-name="Otros" title="Otros 20%"></div>
+                            <div class="bar" style="--bar-value:85%;--bar-color:var(--grafica-amarillo);"
+                                data-name="Partido 1" title="Your Blog 85%"></div>
+                            <div class="bar" style="--bar-value:23%;--bar-color:var(--grafica-lila2)"
+                                data-name="Partido 2" title="Partido 2 23%"></div>
+                            <div class="bar" style="--bar-value:7%;--bar-color:var(--grafica-bordo)"
+                                data-name="Partido 3" title="Partido 3 7%"></div>
+                            <div class="bar" style="--bar-value:38%;--bar-color:var(--grafica-celeste)"
+                                data-name="Partido 4" title="Partido 4 38%"></div>
+                            <div class="bar" style="--bar-value:5%;--bar-color:var(--grafica-lila)"
+                                data-name="Partido 5" title="Partido 7 5%"></div>
+                            <div class="bar" style="--bar-value:30%;--bar-color:var(--grafica-bordo)"
+                                data-name="Partido 6" title="Partido 6 30%"></div>
+                            <div class="bar" style="--bar-value:20%;--bar-color:var(--grafica-gris)" data-name="Otros"
+                                title="Otros 20%"></div>
                         </div>
                     </div>
                 </div>
