@@ -45,15 +45,15 @@ a {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    float: right ;
-    margin-left: auto ;
+    float: right;
+    margin-left: auto;
 }
 
 .menu-boton-inicio:hover {
     color: var(--textos);
 }
 
-#agregarAInformes{
+#agregarAInformes {
     background-color: var(--gris-claro);
     color: white;
     font-size: 10px;
@@ -63,8 +63,8 @@ a {
     text-transform: uppercase;
 }
 
-#agregarAInformes:hover{
-    color:var(--textos)
+#agregarAInformes:hover {
+    color: var(--textos)
 }
 
 p {
@@ -91,7 +91,7 @@ p {
     color: #FFF;
 }
 
-.recuadro-electores{
+.recuadro-electores {
     display: flex;
     background-color: var(--magenta);
     border-radius: 10px;
@@ -103,7 +103,7 @@ p {
     color: #FFF;
 }
 
-.recuadro-participacion{
+.recuadro-participacion {
     display: flex;
     background-color: var(--morado);
     border-radius: 10px;
@@ -115,19 +115,42 @@ p {
     color: #FFF;
 }
 
-.info-recuadro{
+.info-recuadro {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-span{
+span {
     font-size: 12px;
 }
 
-.recuadros-centrales{
+.recuadros-centrales {
     display: flex;
     border-radius: 25px;
     border: 1px var(borde-Grilla) solid;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*barra de progreso*/
+.progress {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
 }

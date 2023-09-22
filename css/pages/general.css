@@ -1,0 +1,157 @@
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-button {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 10px;
+    color: var(--textos);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+}
+
+.menu-boton-inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-left: auto;
+}
+
+.menu-boton-inicio:hover {
+    color: var(--textos);
+}
+
+#agregarAInformes {
+    background-color: var(--gris-claro);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#agregarAInformes:hover {
+    color: var(--textos)
+}
+
+p {
+    font-size: 14px;
+    color: var(--celeste);
+    font-family: 'Roboto';
+}
+
+
+.contenedor-recuadros {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.recuadro-mesas {
+    display: flex;
+    background-color: var(--celeste);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.recuadro-electores {
+    display: flex;
+    background-color: var(--magenta);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.recuadro-participacion {
+    display: flex;
+    background-color: var(--morado);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.info-recuadro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.recuadros-centrales {
+    display: flex;
+    border-radius: 25px;
+    border: 1px var(borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*barra de progreso*/
+.progress {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
+}
