@@ -76,8 +76,58 @@ p {
 .contenedor-recuadros {
     display: flex;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .recuadro-mesas {
+    display: flex;
+    background-color: var(--celeste);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
 
+.recuadro-electores{
+    display: flex;
+    background-color: var(--magenta);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.recuadro-participacion{
+    display: flex;
+    background-color: var(--morado);
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.info-recuadro{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+span{
+    font-size: 12px;
+}
+
+.recuadros-centrales{
+    display: flex;
+    border-radius: 25px;
+    border: 1px var(borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
