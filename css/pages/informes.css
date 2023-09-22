@@ -67,6 +67,8 @@ a {
     font-size: 12px;
     color: var(--textos);
     font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .texto-path-chico {
@@ -76,39 +78,77 @@ a {
 
 .contenedor-recuadros {
     display: flex;
-    justify-content: space-between;
-    margin-right: 50px;
+    justify-content: center;
 }
 
 .recuadro-mesas {
+    display: flex;
     background-color: var(--celeste);
-    border-radius: 5px;
-    margin: 2px;
-    height: 120px;
-    width: 70px;
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
     color: #FFF;
-    font-size: 10px;
-    background-size: cover;
 }
 
 .recuadro-electores {
+    display: flex;
     background-color: var(--magenta);
-    border-radius: 5px;
-    margin: 2px;
-    height: 120px;
-    width: 70px;
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
     color: #FFF;
-    font-size: 10px;
-    background-size: cover;
 }
 
 .recuadro-participacion {
+    display: flex;
     background-color: var(--morado);
-    border-radius: 5px;
-    margin: 2px;
-    height: 120px;
-    width: 70px;
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
     color: #FFF;
-    font-size: 10px;
-    background-size: cover;
+}
+
+#sec-titulo,
+#sec-contenido {
+    padding-left: 5%;
+}
+
+.cuadro-mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    padding-top: 0px;
+}
+
+.agrupacion-politica {
+    overflow-y: scroll;
+    height: 325px;
+    border-radius: 25px;
+    border: 1px solid var(--borde-Grilla);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 325px;
+}
+
+th {
+    height: 11px;
+    color: var(--textos);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Titulo-agrupacion {
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--borde-Grilla);
 }
