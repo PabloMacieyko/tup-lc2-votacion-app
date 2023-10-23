@@ -41,8 +41,10 @@ a {
 }
 
 .parrafo {
+    margin: auto;
     padding: 20px;
     font-size: 150%;
+    text-align: justify;
 }
 
 #sec-titulo,

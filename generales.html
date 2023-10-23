@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/pages/general.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/general.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +40,6 @@
                 </select>
 
                 <button class="filter-button" onclick="aplicarFiltros()">
-
                     <svg width="10" height="10" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
                         <path
                             d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
@@ -262,20 +263,23 @@
                     <div class="title">Agrupaciones política</div>
                     <table>
                         <tr>
-                            <div class="Titulo-agrupacion">JUNTOS POR EL CAMBIO</div>
-                            <div class="agrupacion-textos">
-                                <th>Juntos</th>
-                                <th>38%</th>
-                                <th>30000 Votos</th>
-                            </div>
-                            <div class="progress" style="background: var(--grafica-amarillo-claro);">
-                                <div class="progress-bar" style="width:75%; background: var(--grafica-amarillo);">
-                                    <span class="progress-bar-text">75%</span>
+                            
+                                <div class="titulo-agrupacion">JUNTOS POR EL CAMBIO</div>
+                                <div class="agrupacion-textos">
+                                    <th>Juntos</th>
+                                    <th>38%</th>
+                                    <th>30000 Votos</th>
                                 </div>
-                                <th>PJ</th>
-                                <th>20%</th>
-                                <th>12000 Votos</th>
-                            </div>
+                                <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                                    <div class="progress-bar" style="width:75%; background: var(--grafica-amarillo);">
+                                        <span class="progress-bar-text">75%</span>
+                                    </div>
+                                    <th>PJ</th>
+                                    <th>20%</th>
+                                    <th>12000 Votos</th>
+                                </div>
+
+
                             <div class="progress" style="background: var(--grafica-amarillo-claro);">
                                 <div class="progress-bar" style="width:15%; background: var(--grafica-amarillo);">
                                     <span class="progress-bar-text">15%</span>

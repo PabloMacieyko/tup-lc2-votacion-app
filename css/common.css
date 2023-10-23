@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
-
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+:root {
     --magenta: #ee3d8f;
     --celeste: #37bbed;
     --morado: #9283be;
@@ -57,6 +59,11 @@ h3 {
     color: var(--titulos);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header-page {
     padding-left: 5%;
     padding-right: 5%;
@@ -71,7 +78,6 @@ h3 {
 
 .logo {
     width: 150px;
-    padding-left: 60px;
 }
 
 .menu {
@@ -87,10 +93,7 @@ h3 {
 }
 
 footer img {
-    margin-top: 20px;
-    padding-left: 400px;
     width: 40px;
-    height: 40px;
 }
 
 footer {
@@ -121,6 +124,8 @@ footer a {
 
 .menu-boton-paso,
 .menu-boton-generales {
+    height: auto;
+    width: 50px;
     border-radius: 5px;
     padding: 5px 20px;
     font-size: 10px;
@@ -129,9 +134,13 @@ footer a {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    margin: 5px;
+
 }
 
 .menu-boton-informes {
+    height: auto;
+    width: 50px;
     border-radius: 15px;
     border: 1px solid white;
     padding: 5px 20px;
